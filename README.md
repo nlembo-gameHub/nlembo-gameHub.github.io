@@ -1,2 +1,2 @@
-# nplembo-gameHub.github.io
+# nlembo-gameHub.github.io
 Website to be hosted on github
