@@ -1,165 +1,218 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-  
-  <link href="/css/main.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <title>Nathan Lembo - Game Developer</title>
-  <style>
-    section{
-      padding: 60px 0;
-    }
-  </style>
-</head>
-<body>
-  
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <header>
+    <!-- Start your project here-->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
 
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <!-- <a class="navbar-brand mt-2 mt-lg-0" href="#">
+         <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="22"
+          alt="MDB Logo"
+          loading="lazy"
+        /> 
+      </a> -->
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li> <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
 
-<!-- main image & intro text -->
-<section class="bg-white" id="intro">
- <div class="container-lg">
-  
-<!-- navbar -->
-<nav class="navbar navbar-expand-md navbar-light ">
-  <div class="container-fluid">
-    <div>
-    <h5 class="navbar-brand">
-      Nathan Lembo's Gameplay Programmer Portfolio</h5></div>
-    <!-- toggle button for mobile nav -->
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-   <!-- navbar links -->
-   <div class="collapse navbar-collapse justify-content-end align-center me-5 "  id="main-nav"  >
-<ul class="navbar-nav ">
-
-  <li class="nav-item">
-    <a href="#portfolio" class="nav-link fw-bold text-dark">Portfolio</a>
-  </li>
-  <li class="nav-item">
-    <a href="#about" class="nav-link  fw-bold text-dark">About Me</a>
-  </li>
-  <li class="nav-item">
-    <a href="#contact" class="nav-link fw-bold text-dark">Contact</a>
-  </li>
-  <!-- <li class="nav-item fw-bold text-dark">
-    <a href="#skills" class="nav-link">Skills</a>
-  </li> -->
-  <li class="nav-item ">
-    <a class="btn btn-dark" href="assets/resume.pdf">Resume</a>
-  </li>
-</ul>
-
+    <!-- Right elements -->
+    <ul class="navbar-nav d-flex flex-row">
+      <!-- Social Icons -->
+     
+      <li class="nav-item me-3 me-lg-0">
+        <a class="nav-link" href="https://www.linkedin.com/in/nathanphiliplembo/" target="_blank">
+          <i class="fab fa-linkedin text-dark"></i>
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-0">
+        <a class="nav-link" href="https://github.com/nlembo-gameHub" target="_blank">
+          <i class="fab fa-github-alt text-dark"></i>
+        </a>
+      </li>
+    </ul>
    </div>
+    <!-- Right elements -->
   </div>
+  <!-- Container wrapper -->
 </nav>
-   <!-- put this on a card -->
- <!-- <div class="container"> -->
-     <div class="row row justify-content-md-center my-5">
-       <div class="col-md-5">
-      <div class="card bg-dark shadow p-3 mb-5 bg-body rounded border-dark">
-        <img src="/assets/portfoliolanding.jpg" class="card-img" alt="banner">
+  <!-- Background image -->
+  <div
+    class="p-5 text-center bg-image shadow-3-strong"
+    style="
+      background-image: url('img/portfoliolanding.jpg');
+      height: 500px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Nathan Lembo</h1>
+          <h4 class="mb-3">Gameplay Programmer</h4>
+          <a class="btn btn-outline-light btn-lg m-1" href="#portfolio" role="button"
+          >My Portfolio</a>
+          <a class="btn btn-outline-light btn-lg m-1" href="img/resume.pdf" role="button">Resume</a>
+        </div>
       </div>
     </div>
-    </div> 
-   <!-- </div>  -->
   </div>
+  </header>
+  <!-- Background image -->
+<main>
+  <div class="container">
 
+<!-- my projects -->
+<section id="portfolio" class="text-center">
+<h3 class="m-4
+"><strong>My Projects</strong></h3>
+
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4">
+<div class="card h-100">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="img/Nightmares.jpg" class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Nightmares</h5>
+    <p class="card-text">Wake Technical Community  College's SGD Capstone, Summer 2020.  My role for this game was project lead, programmer lead, gameplay programmer, level designer, narrative Designer and A.I. programmer. I also worked on the documentation and organizational efforts of the game,  as well as creating the documentation that allowed the team to work with efficiency. This project was an amazing opportunity for me as I honed my skills in communication, collaborative skills, and gained experience with collaborative software and tools such as Github as well as coding standards. My team's efforts showed me the importance of collaboration and communication as well as why these are key qualities for game designers/developers.</p>
+    <a href="nightmares.html" class="btn btn-primary">See Live</a>
+    
+  </div>
+</div>
+</div>
+  <div class="col-lg-4 col-md-6 mb-4">
+ <div class="card h-100">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="img/SchoolProjects.jpg" class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Other School Projects</h5>
+    <p class="card-text">These are short projects that focus more on my game play programming and experience using the Unreal Engine as well as the Unity Engine. The art assets were taken from the Unity or Unreal store.</p>
+   
+    <a href="demos.html"  class="btn btn-primary">See Live</a>
+    </div>
+    </div>
+    </div>
+  <div class="col-lg-4 col-md-6 mb-4">
+ <div class="card h-100">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="img/Lone Bowman Title Card.jpg" class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">The Lone Bowman</h5>
+    <p class="card-text">Lone Bowman was a student project created at Wake Technical Community college with fellow Game Development student Jonathan Lorenzo. The game has the player take the role of a lone archer fighting enemies in a forest, cave, and gladiatorial arena. This game was created in GameMaker Studio 1.8 and the project was one of my first steps into working with others in game development and taking on the role of gameplay programmer. I got to practice skills in game design, level design, art integration, A.I., Gameplay programming, and quality assurance.</p>
+    <a href="bowman.html" class="btn btn-primary" >See Live</a>
+  </div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- portfolio -->
-<section id="portfolio" class="bg-altlight py-5 ">
-  <div class="container-lg">
-    <div class="text-center text-altdark ">
-      <h2 class="display-2 text-dark">Portfolio</h2>
-      
-    </div>
-    <!-- cards go inside a grid, so make a row first -->
-  <div class="row my-5 align-items-center justify-content-center  ">
-    <div class="col-8 my-4 col-lg-4 col-xl-3">
-      <div class="card shadow-sm p-3 mb-5 bg-body rounded">
-        <img src="assets/Lone Bowman Title Card.jpg" class="card-img-top" alt="...">
-        <div class="card-body text-center py-4">
-          <h4 class="card-title">Lone Bowman</h4>
-          <a href="bowman.html" target="_blank" class="btn btn-outline-secondary btn-lg mt-3 text-dark">Check it out</a>
-        </div>
-      </div>
-    </div>
-  
-  <!-- next card -->
-  
-    <div class="col-9 col-lg-4">
-      <div class="card border-dark shadow-sm p-3 mb-5 bg-body rounded">
-        <div class="card-header text-center text-altdark display-6">Capstone Project/Wake Tech</div>
-        <img src="assets/Nightmares.jpg" class="card-img-top" alt="Capstone image">
-        <div class="card-body text-center py-5">
-          <h4 class="card-title display-4">Nightmares</h4>
-       
-
-          <a href="nightmares.html" target="_blank" class="btn btn-outline-altdark btn-lg mt-3" >Check it out</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- next card -->
-    <div class="col-8 my-3 col-lg-4 col-xl-3">
-      <div class="card shadow-sm p-3 mb-5 bg-body rounded">
-        <img src="assets/SchoolProjects.jpg" class="card-img-top" alt="...">
-        <div class="card-body text-center py-4">
-          <h4 class="card-title">Game Project Demos</h4>
-          
-          <a href="demos.html" target="_blank" class="btn btn-outline-secondary btn-lg mt-3 text-dark">Check it out</a>
-        </div>
-      </div>
-    </div> 
-  </div>
-  </div>
-</section>
-
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-<!-- list skills below on about section -->
-<section id="skills" class="bg-white p-5 text-center">
-  <div class="container-lg">
+<hr>
+<!-- my projects -->
+<!-- skills -->
+<section id="skills" class="bg-white text-center">
+ 
     <div class=" text-altdark py-5">
  <h2 class="display-2 text-center ">Skills</h2>
 <div class="row align-items-start">
   
   <ul class="list-unstyled">
-    <li class="fs-5 py-2">
+    <li class="py-2">
       <h3>
        Engines: 
       </h3>
-      Development in Unreal Engine 4, Unity, and GameMaker Studio 2</p>
+      <p> Development in Unreal Engine 4, Unity, and GameMaker Studio 2</p>
+    
     </li>
-    <li class="fs-5 py-2">
+    <li class="py-2">
       <h3>
        Illustrative Software: 
       </h3>
-      Adobe Photoshop, Illustrator, Adobe After Effects
-    <li class="fs-5 py-2">
+      <p>Adobe Photoshop, Illustrator, Adobe After Effects</p>
+    <li class="y-2">
       <h3>
        Modeling and Texturing Software: 
       </h3>
-      Maya, Blender, Substance Painter 
+     <p>Maya, Blender, Substance Painter</p>  
     </li>
-    <li class="fs-5 py-2">
+    <li class="py-2">
       <h3>
        Languages: 
       </h3>
-       C++, C#, HTML, Javascript, Phaser, Visual Scripting
+      <p>C++, C#, HTML, Javascript, Phaser, Visual Scripting</p> 
      </li>
-     <li class="fs-5 py-2">
+     <li class="py-2">
       <h3>
        Version Control Software: 
       </h3>
-      SourceTree, Git
+      <p>SourceTree, Git</p>
      </li>
-     <li class="fs-5 py-2">
+     <li class="py-2">
       <h3>
        Development: 
       </h3>
@@ -170,95 +223,83 @@
   <p class="fs-5">A.A.S. In Simulation and Game Development</p>
     </div>
   </div>
-  </div>
+ 
   </section>
-<!-- about me content -->
+<!-- skills -->
 
-<section id="about" class="bg-altdark p-5">
-  <div class="container-lg">
-    <div class="row justify-content-end">
-     <div class="col-8"></div>
-      <div class="col-1">
-       <a href="https://www.linkedin.com/in/nathanphiliplembo/" target="_blank"><i class="bi bi-linkedin text-altlight"></i></a>
-      </div>
-    <div class="col-1">
-       <a href="https://github.com/nlembo-gameHub" target="_blank"><i class="bi bi-github text-white "></i></a>
+<hr>
+
+<!-- About Me -->
+
+<section class="text-center" id="about">
+<h3 class="my-5">
+  <strong>About Me</strong>
+</h3>
+<div class="row">
+  <div class="col">
+    <!-- <img src="img/a.jpg"  class="rounded-circle shadow-1-strong mb-4
+    " alt="Avatar"> -->
+    <p>    My name is Nathan Lembo, a Gameplay Programmer and someone with a passion for Game and Level Design. I have a love for designing and creating player interactions with the environment and game world. As a Gameplay Programmer, developing events and locations filled with interactivity and life is something that I strive for in my work and consistently aim to provide so that players can feel and experience the environment and its details. Ever since I was young I've been captivated by video games with the worlds and experiences it created and this pushed me to take my own path towards Game Development. I'm a graduate student at WakeTechnical Community College and I am currently a student at William Peace University for a Bachelor's in Game Design. Through my higher education I've gained experience in working with multiple game engines such as Unreal 4 and Unity as well as working with teams to create games and projects. With these skills and experiences I strive to create and work with others to create fun environments and provide players with opportunities to explore and interact with the worlds created for them.</p>
+  </div>
+  </div>
+</section>
+<!-- About Me -->
+<!-- contact section -->
+<section id="contact" class="text-center">
+  <h3 class="my-5"><strong>Contact me</strong></h3>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+      <form>
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="form4Example1" class="form-control" />
+          <label class="form-label" for="form4Example1">Name</label>
+        </div>
+      
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="form4Example2" class="form-control" />
+          <label class="form-label" for="form4Example2">Email address</label>
+        </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          <label class="form-label" for="form4Example3">Message</label>
+        </div>
+      
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+          <label class="form-check-label" for="form4Example4">
+            Send me a copy of this message
+          </label>
+        </div>
+      
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+      </form>
     </div>
-   </div>
-
-<div class="row align-items-center justify-content-center text-altlight">
-  <div class="col-lg-6">
-    <h2 class="display-2 text-center py-4">About Me</h2>
-  <p class="lead fw-bold">
-    My name is Nathan Lembo, a Gameplay Programmer. I love coding and solving challenging problems. My passion is in designing and creating player interactions within the game world. Developing events and locations filled with interactivity and life is something that I strive for in my work and consistently aim to provide, so that players can feel and experience the environment and its details. I enjoy working with others, keeping busy and am always ready to learn new things.  
-  </p>
-  </div>
-</div>
-</div>
-</section>
-
-
-
-  
-
-
-
-<!-- contact form -->
-<!-- form-control, form-label, form-select, input-group, input-group-test -->
-
-<section id="contact">
-  <div class="container-lg  py-5">
-<div class="text-center">
-  <h2 class="display-2">Get in Touch</h2>
-  <p class="lead">Fill out the from to contact me directly...</p>
-</div>
-
-<!-- form will go inside a grid row so we can control width and span of cols-->
-<div class="row justify-content-center my-5">
-  <div class="col-lg-6">
-    <form >
-      <label for="email" class="form-label">Email address:</label>
-      <div class="mb-4 input-group">
-        <span class="input-group-text">
-        <i class="bi bi-envelope-fill"></i>
-      </span>
-      <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com">
-      <!-- another tooltip -->
-      <span class="input-group-text">
-        <span class="tt" data-bs-placement="bottom" title="Enter an email adsdress we can reply to.">
-        <i class="bi bi-question-circle text-muted"></i></span>
-      </span>
-      </div>
-
-      <label for="name" class="form-label">Name:</label>
-      <div class="input-group mb-4">
-        <span class="input-group-text">
-          <i class="bi bi-person-fill"></i>
-        </span>
-          <input type="text" class="form-control" id="name" placeholder="e.g.Mario">
-      </div>
-    
-
-     <div class="form-floating mb-4 mt-5">
-         <textarea class="form-control" id="query" style="height:140px"></textarea>
-         <label for="query" >Leave a message...</label>
-     </div>
-     <div class="mb-4 text-center">
-       <button type="submit" class="btn btn-dark">Submit</button>
-     </div>
-    </form>
-  </div>
-</div>
-
   </div>
 </section>
+<!-- contact section -->
+</div>
+</main>
 
-<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous">
-</script>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">Nathan Lembo</a>
+    </div>
+    <!-- Copyright -->
+  </footer> 
 
+    <!-- End your project here-->
 
-</body>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
 </html>
