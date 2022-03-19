@@ -270,26 +270,10 @@
           <textarea name="message" class="form-control" id="yourmessage" rows="4"></textarea>
           <label class="form-label" for="yourmessage">Message</label>
         </div>
-      
-        <!-- Checkbox -->
-        <div class="form-check d-flex justify-content-center mb-4">
-          <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-          <label class="form-check-label" for="form4Example4">
-            Send me a copy of this message
-          </label>
-          
-        </div>
-      
+           
         <!-- Submit button -->
         <button type="submit" id="submit" onclick="submitForm()" class="btn btn-primary btn-block mb-4">Send</button>
        
-        <script>
-          function submitForm() {
-          document.my_form.submit();
-          document.my_form.reset();
-          }
-      </script>
-
       </form>
      
     </div>
@@ -313,7 +297,13 @@
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+       window.onbeforeunload = () => {
+          for(const form of document.getElementsByTagName('form')) {
+              form.reset();
+          }
+      }
+    </script>
     
   </body>
 </html>
